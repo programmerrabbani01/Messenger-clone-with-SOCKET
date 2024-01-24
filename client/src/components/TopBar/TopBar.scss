@@ -1,0 +1,134 @@
+.topBar {
+  width: 100%;
+  box-shadow: var(--messenger-shadow);
+  padding: 5px 0px;
+
+  .topBarContainer {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topBarSearch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+
+    a {
+      display: block;
+      transform: translate(0px, 3px);
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .searchBox {
+      position: relative;
+      input {
+        width: 278px;
+        padding: 7px 10px 7px 30px;
+        border-radius: 50px;
+        background-color: var(--messenger-gray);
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      svg {
+        position: absolute;
+        top: 8px;
+        left: 10px;
+      }
+    }
+  }
+
+  .topBarMenu {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      gap: 5px;
+      width: 500px;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 200px;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: var(--messenger-gray);
+      }
+
+      a {
+        display: block;
+        transform: translate(0px, 3px);
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      a {
+        font-size: 20px;
+        color: #333333;
+      }
+    }
+  }
+
+  .topBarUser {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translate(0px, 4px);
+    position: relative;
+
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .dropDownMenu {
+      background-color: #ffffff;
+      box-shadow: var(--messenger-shadow);
+      padding: 15px;
+      border-radius: 10px;
+      position: absolute;
+      top: 103%;
+      right: 0;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        li {
+          svg {
+            margin-bottom: -2px;
+            margin-right: 5px;
+          }
+          a {
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+}
